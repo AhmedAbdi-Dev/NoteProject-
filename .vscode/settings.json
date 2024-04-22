@@ -1,0 +1,11 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django",
+        "--errors-only",
+        "--load-plugins pylint_django"
+    ]
+    
+    
+}
