@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth.models import User
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated, AllowAny
-from .models import Note 
+from .models import Note
 from .serializers import NoteSerializer, UserSerializer
 
 
@@ -50,4 +50,3 @@ class CreateUserView(generics.CreateAPIView):
     serializer_class = UserSerializer
     ## Allows any user to create a new user
     permission_classes = [AllowAny]
-    
