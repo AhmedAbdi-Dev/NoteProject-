@@ -15,8 +15,7 @@ class NoteListCreate(generics.ListCreateAPIView):
         ## Gets the current user
         user = self.request.user
         ## Returns all the notes that the user has created
-        return Note.objects.filter(author=user)
-    
+        return Note.objects.filter(author=user)    
     def perform_create(self, serializer):
         ## if serializer is valid
         if serializer.is_valid():
